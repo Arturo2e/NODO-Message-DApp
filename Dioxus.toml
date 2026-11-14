@@ -1,0 +1,13 @@
+[application]
+name = "nodo"
+default_platform = "web"
+
+[web.app]
+title = "NODO — Mensajería verificable"
+
+[web.resource]
+style = []
+script = []
+
+[web.resource.dev]
+script = []

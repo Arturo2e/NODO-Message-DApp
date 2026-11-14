@@ -1,0 +1,24 @@
+[package]
+name = "nodo-relay"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+axum = { version = "0.8", features = ["macros"] }
+base64 = "0.22"
+hex = "0.4"
+k256 = { version = "0.13", features = ["ecdsa"] }
+rand = "0.8"
+ring = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+sha3 = "0.10"
+sqlx = { version = "0.8", default-features = false, features = ["mysql", "runtime-tokio-rustls", "migrate", "macros"] }
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "net", "rt-multi-thread", "signal", "time"] }
+tower-http = { version = "0.6", features = ["fs", "limit", "trace"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+uuid = { version = "1", features = ["v4", "serde"] }
